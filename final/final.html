@@ -1,0 +1,126 @@
+<html>
+    <link rel="stylesheet" href="stylesheet.css">
+<style>
+    .backg{
+        position: fixed;
+        background: url(5110644-hd-stone-wallpaper.jpg);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    
+</style>
+<body>
+    <div class="backg"></div>
+    <div class="content">
+      <div class="content__container">
+          <div class="content__container">
+        <p class="content__container__text">
+          Hello
+        </p>
+
+        <ul class="content__container__list">
+          <li class="content__container__list__item">world !</li>
+          <li class="content__container__list__item">users !</li>
+          
+        </ul>
+        </div>
+        </div>
+
+
+        <button class="button" id="bt1"><span>Login</span></button>
+        <button class="button" id="bt2"><span>Register</span></button>
+    </div>
+    
+    <div id= "id01" class="my_modal">
+        
+        <form class="modal-animated animate" action="actionpahe.php">
+        <div class="img-container">
+             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="avatar-05.png" alt="Avatar" class="avatar">
+            
+        </div>
+        <div class="contents">
+            
+         
+            <button class="explore">Login<span class="icon-right"></span><span class="icon-right after"></span></button>
+            <button class="explore">Home<span class="icon-right"></span><span class="icon-right after"></span></button>
+        </div>
+            
+            
+             <div class="modal_body">
+                 <div class="ab">
+    
+    
+                <hr class="sep"/>
+                <div class="group">
+                  <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+                  <label>Name</label>
+                </div>
+                <div class="group">
+                  <input type="password" required="required"/><span class="highlight"></span><span class="bar"></span>
+                  <label>Password</label>
+                </div>
+                </div>
+            </div>
+             </form>
+        </div>
+    
+    <div id= "id02" class="register_modal">
+        <form class="sodal-animated animate" action="actionpahe.php">
+        <div class="image-container">
+             <span onclick="document.getElementById('id02').style.display='none'" class="cclose" title="Close Modal">&times;</span>
+            <img src="LoginExpress_Login.png" alt="Avatar" class="avatar">
+            
+        </div>
+            
+            
+             <div class="contents">
+            
+         
+            <button class="explore">Register<span class="icon-right"></span><span class="icon-right after"></span></button>
+            <button class="explore">Home<span class="icon-right"></span><span class="icon-right after"></span></button>
+        </div>
+            
+            
+            <div class="register_modal_body">
+                 <div class="ab">
+    
+    
+                <hr class="sep"/>
+                <div class="group">
+                  <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+                  <label>Email</label>
+                </div>
+                <div class="group">
+                  <input type="password" required="required"/><span class="highlight"></span><span class="bar"></span>
+                  <label>Password</label>
+                </div>
+                <div class="group">
+                  <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+                  <label>Userame</label>
+                </div>
+                 <div class="group">
+                  <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+                  <label>Phone</label>
+                </div>   
+                </div>
+            </div>
+        
+        </form>
+    </div>
+    <script>
+        var login_modal= document.getElementById("id01");
+        var register_modal= document.getElementById("id02");
+        var login= document.getElementById("bt1");
+        var register= document.getElementById("bt2");
+        var span = document.getElementsByClassName("close")[0];
+        login.onclick = function() {
+            login_modal.style.display = "block";
+}
+        register.onclick= function() {
+            register_modal.style.display = "block";
+        }
+    </script>
+</body>
+</html>
